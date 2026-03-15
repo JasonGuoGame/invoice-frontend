@@ -1,0 +1,120 @@
+body {
+    background: #f5f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+/* dashboard layout */
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* card */
+
+.card {
+    width: 1000px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    padding: 30px;
+}
+
+/* header */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+/* table */
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th {
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-table td {
+    padding: 14px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.invoice-table tr:hover {
+    background: #fafafa;
+}
+
+/* status badge */
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status.UNPAID {
+    background: #fff4e5;
+    color: #e67e22;
+}
+
+.status.PAID {
+    background: #eafaf1;
+    color: #27ae60;
+}
+
+/* buttons */
+
+.primary-btn {
+    background: #4f46e5;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #4338ca;
+}
+
+.download-btn {
+    background: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #2980b9;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}

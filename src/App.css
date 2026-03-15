@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+/* 页面居中 */
+.page-container {
+  width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* 标题 */
+.title {
+  margin-bottom: 20px;
+}
+
+/* Add 按钮 */
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* 表格 */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* 表头 */
+.invoice-table th {
+  background-color: #f4f4f4;
+  padding: 12px;
+}
+
+/* 表格行 */
+.invoice-table td {
+  padding: 10px;
+}
+
+/* 行 hover */
+.invoice-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Delete 按钮 */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Download 按钮 */
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+}
