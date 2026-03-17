@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InvoiceTable from "../components/InvoiceTable";
 import { createInvoice,getInvoices } from "../api/invoiceApi";
+import SubscriptionTable from "../components/SubscriptionTable";
 
 function InvoicePage() {
 
@@ -71,13 +72,18 @@ function InvoicePage() {
 
     return (
 
-        <InvoiceTable
-            invoices={invoices}
-            addInvoice={addInvoice}
-            removeInvoice={removeInvoice}
-            downloadInvoicePDF={downloadInvoicePDF}
-        />
+        <>
+            <h2>Invoices</h2>
+            <InvoiceTable
+                invoices={invoices}
+                addInvoice={addInvoice}
+                removeInvoice={removeInvoice}
+                downloadInvoicePDF={downloadInvoicePDF}
+            />
 
+            <h2>Subscriptions</h2>
+            <SubscriptionTable />
+        </>
     );
 }
 

@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const API_URL = "http://localhost:8080/api/invoices";
+const API_URL_SUBSCRIPTION = "http://localhost:8080/api/subscriptions";
 
 export const getInvoices = () => axios.get(API_URL);
 
@@ -28,3 +29,8 @@ export const downloadInvoice = async (invoiceId) => {
     a.click();
     a.remove();
 };
+
+export const fetchSubscriptions = async () => {
+    const response = await axios.get(API_URL_SUBSCRIPTION);
+    return response.data;
+}
